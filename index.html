@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Deployment Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .checklist {
+            background-color: #fff;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 1.5rem;
+        }
+        .section-title {
+            color: #004990;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+        button[type="submit"] {
+            background-color: #004990;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pre-Deployment Administration Checklist</h1>
+<div class="checklist">
+    <form id="PreDeploymentChecklist" action="https://formspree.io/f/xqkonlnd" method="POST">
+        <input type="hidden" name="_next" value="thank_you.html">
+        
+        <label>
+            Detachment Name: <input type="text" name="detachment_name" required>
+        </label>
+        <br><br>
+        <div class="section">
+            <h2 class="section-title">Equipment</h2>
+            <label>
+                <input type="checkbox" name="equipment_rcan_test">
+                Confirm Connectivity to Domain
+            </label>
+            <label>
+                <input type="checkbox" name="equipment_c4sg_test_result">
+                Advise C4SG of test results
+            </label>
+            <label>
+    <p>Check all equipment:</p>
+</label>
+<div class="sub-checklist" style="margin-left: 1.5rem;">
+    <p><strong>Bearers:</strong></p>
+    <label>
+        <input type="checkbox" name="bearers_physical_connectivity">
+        Physical Connectivity
+    </label>
+    <label>
+        <input type="checkbox" name="bearers_ip_addresses">
+        IP Addresses line up with Ops Card
+    </label>
+    <label>
+        <input type="checkbox" name="bearers_car_sar_plan">
+        Confirm CAR/SAR plan
+    </label>
+    <label>
+        <input type="checkbox" name="bearers_ops_card_printed_laminated">
+        Ops Card Printed-laminated
+    </label>
+</div>
+<div class="sub-checklist" style="margin-left: 1.5rem;">
+    <p><strong>RCAN:</strong></p>
+    <label>
+        <input type="checkbox" name="rcan_test_all_clients">
+        Test all clients
+    </label>
+    <label>
+        <input type="checkbox" name="RCAN_ip_addresses">
+        IP address configuration is correct
+    </label>
+    <label>
+        <input type="checkbox" name="rcan_switch">
+        Switch
+    </label>
+    <label>
+        <input type="checkbox" name="rcan_connectivity">
+        RCAN connectivity
+    </label>
+    <label>
+        <input type="checkbox" name="rcan_cellular">
+        4G/3G Cellular
+    </label>
+    <label>
+        <input type="checkbox" name="rcan_type2">
+        Type 2 Encryption
+    </label>
+    <label>
+        <input type="checkbox" name="rcan_cables">
+        Cables
+    </label>
+<label>
+        <input type="checkbox" name="rcan_services">
+        Services
+    </label>
+</div>
+
+<div>
+            <label>
+                <input type="checkbox" name="equipment_self_sufficient">
+                Ensure Det is self-sufficient for a minimum of 72 hrs. 
+            </label>
+            <label>
+                <input type="checkbox" name="equipment_stores_task">
+                Ensure Det has adequate stores for the task
+            </label>
+            <label>
+                <input type="checkbox" name="equipment_generator_serviceability">
+                Check Generator for serviceability
+            </label>
+            <label>
+                <input type="checkbox" name="equipment_cci_crypto">
+                Ensure CCI/Crypto - booked/checked
+            </label>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Orders</h2>
+            <label>
+                <input type="checkbox" name="orders_receive">
+                Receive orders
+            </label>
+             <label>
+                <input type="checkbox" name="orders_backbrief">
+                  Conduct Appreciation/Backbrief
+            </label> 
+
+            <label>
+                <input type="checkbox" name="orders_conduct">
+                  Conduct orders
+            </label>
+	    <label>
+    		<input type="checkbox" name="orders_understand">
+   		 Ensure all personnel understand orders
+	    </label>
+ 	    <label>
+    		<input type="checkbox" name="orders_briefing">
+   		 Conduct pre-deployment briefing
+	    </label>
+            <label>
+                <input type="checkbox" name="orders_confirm">
+                 Confirm orders
+            </label>
+  </div>
+
+  <div class="section">
+            <h2 class="section-title">Detachment Folder</h2>
+            <label>
+                <input type="checkbox" name="detachment_loadlist">
+                Prepare loadlist
+            </label>
+            <label>
+               
+               <p> Prepare movement documents:</p>
+            </label>
+
+
+<div class="sub-checklist" style="margin-left: 1.5rem;">
+    <p><strong>Move Docs:</strong></p>
+    <label>
+        <input type="checkbox" name="movedocs_md430">
+        MD430 - Inventory for effects of movement.
+    </label>
+    <label>
+        <input type="checkbox" name="movedocs_md450">
+        MD450 - Deployment Planning Data
+    </label>
+    <label>
+        <input type="checkbox" name="movedocs_md460">
+        MD460 - Requisition Data for Freight Movement
+    </label>
+    <label>
+        <input type="checkbox" name="movedocs_md461">
+        MD461 - Dangerous Goods 
+    </label>
+</div>
+<br>
+            <label>
+    <p>Ensure relevant documents are attached, incl class A:</p>
+          </label>
+
+<div class="sub-checklist" style="margin-left: 1.5rem;">
+    <p><strong>Day to Day:</strong></p>
+    <label>
+        <input type="checkbox" name="upmc">
+        UPMC's
+    </label>
+    <label>
+        <input type="checkbox" name="lds">
+        Loss and damage forms
+    </label>
+    <label>
+        <input type="checkbox" name="r2s">
+        Reports and Returns (sigs tactical aide memoire)
+    </label>
+    <label>
+        <input type="checkbox" name="sops">
+        Standard Operating Procedures
+    </label>
+</div>
+
+
+<div class="sub-checklist" style="margin-left: 1.5rem;">
+    <p><strong>A Class:</strong></p>
+    <label>
+        <input type="checkbox" name="classa_soi">
+        Signals Operating Instructions (SOI)
+    </label>
+    <label>
+        <input type="checkbox" name="Disposition_sheet">
+        Disposition sheet
+    </label>
+    <label>
+        <input type="checkbox" name="muster">
+        Muster Sheet
+    </label>
+    <label>
+        <input type="checkbox" name="codes">
+        Codes
+    </label>
+</div>
+<br>
+           
+           
+
+            <label>
+                <input type="checkbox" name="detachment_shift_rosters">
+                Shift Rosters
+            </label>
+            <label>
+                <input type="checkbox" name="detachment_guides">
+                How to – guides (if relevant)
+            </label>
+          
+            <label>
+                <input type="checkbox" name="detachment_net_diagram">
+                Net Diagram
+            </label>
+
+            <label>
+                
+               <p> Technical Aids:</p>
+            </label>
+
+<div class="sub-checklist" style="margin-left: 1.5rem;">
+    <p><strong>Coverage maps</strong></p>
+    <label>
+        <input type="checkbox" name="graphex">
+        Graphex Charts
+    </label>
+    <label>
+        <input type="checkbox" name="Cloud_rf">
+        Cloud RF
+    </label>
+    <label>
+        <input type="checkbox" name="Dishpointer">
+        Dishpointer
+    </label>
+    <label>
+        <input type="checkbox" name="Lineofsight">
+        VHF LoS map
+    </label>
+<label>
+        <input type="checkbox" name="3g_4g">
+        3g/4g Sat footprint
+    </label>
+
+</div>
+
+<br>
+            <label>
+                <input type="checkbox" name="detachment_deficiencies">
+                Deficiencies/Equipment under repair
+            </label>
+            <label>
+                <input type="checkbox" name="detachment_nom_roll">
+                NOM Roll (to incl. Name/Regt/Rank/NOK/contact)
+            </label>
+        </div>
+
+
+        <div class="section">
+            <h2 class="section-title">Vehicle</h2>
+            <label>
+                <input type="checkbox" name="vehicle_loadlist">
+                Ensure vehicle is loaded IAW Loadlist
+            </label>
+            <label>
+                <input type="checkbox" name="vehicle_fuel">
+                Vehicle is fuelled/loaded with fuel
+            </label>
+            <label>
+                <input type="checkbox" name="vehicle_load_secure">
+                Secure vehicle load
+            </label>
+            <label>
+                <input type="checkbox" name="vehicle_weight_limits">
+                Ensure vehicle and trailer are within weight limits.
+            </label>
+            <label>
+                <input type="checkbox" name="vehicle_documents">
+                Ensure vehicle has required vehicle documents:
+            </label>
+            <label>
+                <input type="checkbox" name="vehicle_accident_documents">
+                Accident documents
+            </label>
+            <label>
+                <input type="checkbox" name="vehicle_parade_forms">
+                First Parade  
+	    </label>
+          </div> 	     
+
+<div class="section">
+    <h2 class="section-title">Personnel</h2>
+    <label>
+        <input type="checkbox" name="personnel_roster">
+        Ensure personnel roster is up to date
+    </label>
+    <label>
+        <input type="checkbox" name="personnel_medical">
+        Check medical readiness of all personnel
+    </label>
+    <label>
+        <input type="checkbox" name="personnel_documents">
+        Ensure all personnel have necessary documents 
+    </label>
+
+<div class="sub-checklist" style="margin-left: 1.5rem;">
+    <p><strong>Required docs:</strong></p>
+    <label>
+        <input type="checkbox" name="ID_discs">
+        ID Discs (dog tags)
+    </label>
+    <label>
+        <input type="checkbox" name="passport">
+       Passport
+    </label>
+    <label>
+        <input type="checkbox" name="430A">
+        430A
+    </label>
+   <br>
+
+</div>
+    <label>
+        <input type="checkbox" name="personnel_next_of_kin">
+        Verify next of kin information for all personnel
+    </label>
+    <label>
+        
+<input type="checkbox" name="personnel_family_support_plan">
+        Verify detachment family support plans
+    </label>
+</div>
+<div class="section">
+    <h2 class="section-title">Training</h2>
+    <label>
+        <input type="checkbox" name="training_pre_deployment">
+        Conduct pre-deployment training - Specific Task Rehearsals
+    </label>
+    <label>
+        <input type="checkbox" name="training_records">
+        Ensure training records are up to date
+    </label>
+    <label>
+        <input type="checkbox" name="training_individual">
+        Confirm and rectify detachment members knowledge deficiencies
+    </label>
+    <label>
+        <input type="checkbox" name="training_collective">
+        Verify collective training requirements
+    </label>
+</div>
+<div class="section">
+    <h2 class="section-title">Communication</h2>
+    <label>
+        <input type="checkbox" name="communication_plan">
+        Develop and disseminate concept of communication (Line/Voice/Data)
+    </label>
+    <label>
+        <input type="checkbox" name="communication_check">
+        Perform communication checks
+    </label>
+ 
+</div>
+<div class="section">
+    <button type="submit">Submit Checklist</button>
+</div>
+</form>
+</div>
+</body>
+</html>
